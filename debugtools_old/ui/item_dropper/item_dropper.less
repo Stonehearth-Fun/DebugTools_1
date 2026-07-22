@@ -1,0 +1,93 @@
+#itemDropperIcon {
+   .debugDockIcon;
+   background: url(./images/icon.png);
+}
+
+#itemDropper {
+   .debug; 
+   position: absolute;
+   width: 200px;
+   padding: 0;
+
+   &.active {
+     background: #1c6692;
+   }
+
+   .header {
+      font-size: 13px;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      height: 24px;
+      span {
+         padding: 5px;
+         display: inline-block;
+      }
+      a {
+         padding: 5px;
+         display: inline-block;
+         float: right;
+         &:hover {
+            -webkit-filter: brightness(1.4);
+         }
+      }
+   }
+
+   #uriInput {
+      width: 190px;
+      height: 24px;
+      font-size: 14px;
+      margin-left: 2px;
+      padding: 0px 2px;
+
+      &.invalid {
+         background: #ffcccc;
+      }
+
+      &.notifyInvalid {
+         animation-name: shake;
+         animation-duration: .02s;
+         animation-iteration-count: 10;
+         animation-timing-function: linear;
+      }
+   }
+
+   label {
+      .control;
+      top: 8px;
+      position: relative;
+      &:hover {
+         -webkit-filter: brightness(1.4);
+      }
+      margin-left: 3px;
+   }
+
+   #makeButton {
+      .control;
+      content: url(./images/icon.png);
+      float: right;
+      padding: 8px;
+      -webkit-filter: brightness(0.8);
+   }
+
+   #makeButton:hover {
+      -webkit-filter: brightness(1.4);
+   }
+}
+
+.ui-menu-item {
+   .debug;
+   @debugFontFamily;
+   font-size: 11px;
+}
+
+.itemDropperAutocomplete {
+   border: none !important;
+   padding: 0 !important;
+   width: 400px;
+   .ui-state-focus {
+      background: none !important;
+      margin: 0;
+      font-weight: bold;
+   }
+}

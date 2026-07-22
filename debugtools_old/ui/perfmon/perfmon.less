@@ -1,0 +1,53 @@
+#perfmonIcon {
+   .debugDockIcon;
+   background: url('./images/icon.png');
+}
+
+#perfmon {
+   .debug;
+   position: absolute;
+   top: 10px;
+   left: 720px;
+   min-width: 250px;
+
+   .button {
+      position: relative;
+      padding-right: 5px;
+   }
+
+   .name {
+      padding-right: 12px;
+   }
+
+   .sub_header {
+      color: #808080;
+   }
+
+   #collapse {
+      position: absolute;
+      top: 8px;
+      right: 4px;
+   }
+
+   #toggleLongTickProfile {
+      display: inline-block;
+   }
+
+   #profileElapsedTime {
+      display: inline-block;
+   }
+
+   #profileElapsedTime.hidden {
+      display: none;
+   }
+
+   #longTicksCheckbox {
+      display: block;
+      float: right;
+   }
+
+   input[type='checkbox'] {
+      .resetAllCss;
+      top: -2px;
+   }
+}

@@ -1,0 +1,141 @@
+#entityInspectorIcon {
+   .debugDockIcon;
+   background: url('./images/icon.png');
+}
+
+#entityInspectorFrameInfo {
+   .debug; 
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   //font-size: 16px;
+   //line-height: 13px;
+   //background: rgba(0,0,0,0.5);
+   //color: #fff;
+   //font-family: "munro_smallregular";
+}
+
+#entityInspector {
+   .debug; 
+   position: absolute;
+   top: 10px;
+   left: 0px;
+   min-width: 250px;
+   white-space: nowrap;
+
+   #header {
+      div {
+         display: inline-block;
+         height: 21px;
+         line-height: 20px;
+      }
+
+      #search {
+         float: right;
+         height: 18px;
+      }
+   }
+
+   .modelId {
+      display: inline-block;
+      width: 50px;
+   }
+
+   .collapser {
+      color: white;
+      font-size: 20px;
+      line-height: 18px;
+      display: inline-block;
+      cursor: pointer;
+      height: 14px;
+      overflow: hidden;
+   }
+
+   #legend {
+      padding-top: 10px;
+   }
+
+   #content {
+      max-height: 850px;
+      overflow-y: scroll;
+      max-width: 750px;
+      overflow-x: scroll;
+   }
+
+   input {
+      width: 130px;
+      font-size: 10px;
+      color: #000;
+      background: #fff;
+      padding: 0 0 0 4px;
+      border: 1px solid #333;
+   }
+
+   .button {
+      position: relative;
+      top: -6px;
+   }
+
+   #collapse {
+      position: absolute;
+      top: 8px;
+      right: 4px;
+   }
+
+   .row {
+      &.hover-child {
+         background: rgba(1,1,1,0.2);
+      }
+      &:hover {
+         background: rgba(1,1,1,0.4);
+      }
+
+      &.hasSearchResult {
+         background-color: #3d0b6f;
+      }
+
+      &.searchResult {
+         background-color: rebeccapurple;
+      }
+
+      .args {
+         color: #808080;
+      }
+
+      .progress {
+         color: #8f91ec;
+      }
+   }
+
+   .steppablePath {
+      color: green;
+   }
+
+   .activity {
+      font-size: 13px;
+      text-shadow: 0px 0px 1px;
+      letter-spacing: 0.3pt;
+   }
+
+   .thinking {
+      color: #00CFFF;
+   }
+   .ready {
+      color: #D0D000;
+   }
+   .stopped, .rejected {
+      color: #D02828;
+   }
+   .started {
+      color: #00B028;
+   }
+   .running {
+      color: #00FF30;
+   }
+   .finished {
+      color: #508050;
+   }
+   .potential {
+      color: #C0C0C0;
+   }
+}
