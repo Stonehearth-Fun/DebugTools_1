@@ -1,0 +1,11 @@
+{
+   "type": "command",
+   "name": "interrupt",
+   "display_name": "i18n(debugtools_1_0:debugtools_1_0_mixintos.interrupt_ai.interrupt_command.display_name)",
+   "description": "i18n(debugtools_1_0:debugtools_1_0_mixintos.interrupt_ai.interrupt_command.description)",
+   "icon": "file(interrupt_command.jpg)",
+   "action": "call",
+   "function": "debugtools_1_0:interrupt_ai",
+   "args": [
+   ]
+}
